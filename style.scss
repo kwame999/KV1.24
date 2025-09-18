@@ -1,0 +1,77 @@
+@use '_fonts' as f;
+@use '_colors' as c;
+
+*
+{
+    padding: 0;
+    margin: 0;
+}
+body
+{
+    background-color: map-get(c.$Colors, bkgroundMain);
+    display: flex;
+    color: white;
+    font-family: map-get(f.$fontFamily, rootFont);
+}
+
+.intro-card
+{
+    display: flex;
+    background-color: map-get(c.$Colors, bkgroundSecondary);
+    padding: 1.25rem 1.5rem ;
+    border-radius: 16px;
+    border: #262626 1px solid;
+    max-width: 620px;
+    font-size: .9rem;
+    align-content: center;
+.card-details
+{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .profile-pic 
+    {
+        width: 20%;
+        border: solid red;
+        border-radius: 100%;
+    }
+}
+    .quick-connect
+    {
+        display: flex;
+        border: solid red;
+      
+        .status::before
+        {
+            content: "s";
+        }
+
+        button
+        {
+            border-radius: 100%;
+            max-height: 28px;
+            padding: .4rem;
+        }
+    }
+
+    .card-details .socials
+    {
+        display: flex;
+        list-style: none;
+        margin-top: .75rem;
+    }
+
+    .p-card
+    {
+            line-height: 141.8%;
+    }
+
+    h1
+    {
+        font-size: 19px;
+        letter-spacing: -0.5%;
+    }
+
+    
+}
