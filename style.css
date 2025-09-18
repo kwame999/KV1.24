@@ -9,6 +9,48 @@ body {
   display: flex;
   color: white;
   font-family: Geist;
+  gap: 0.5rem;
+  padding: 3.25rem 1.5rem 0rem 1.5rem;
+}
+
+.nav-group {
+  display: flex;
+  border: #262626 1px solid;
+  align-items: center;
+  border-radius: 41px;
+  background-color: #191919;
+  margin-right: 1rem;
+}
+.nav-group .nav {
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 11rem 0.5rem;
+  align-items: center;
+  text-align: center;
+  color: #E9E9E9;
+  font-size: 0.9rem;
+}
+.nav-group .nav li a {
+  text-decoration: none;
+  color: #646464;
+  display: flex;
+}
+.nav-group .nav li .groupa:hover {
+  color: #E9E9E9;
+  background-color: red;
+}
+.nav-group .nav li .groupa {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
+  transition: 1s;
+}
+.nav-group .nav li .groupa p {
+  order: 1;
+  font-size: 12px;
 }
 
 .intro-card {
@@ -18,6 +60,7 @@ body {
   border-radius: 16px;
   border: #262626 1px solid;
   max-width: 540px;
+  max-height: 250px;
   font-size: 0.9rem;
   align-content: center;
 }

@@ -12,6 +12,61 @@ body
     display: flex;
     color: white;
     font-family: map-get(f.$fontFamily, rootFont);
+    gap: 0.5rem;
+    padding: 3.25rem 1.5rem 0rem 1.5rem;
+}
+
+.nav-group
+{
+    display: flex;
+    border: #262626 1px solid;
+    align-items: center;
+    border-radius: 41px;
+    background-color: map-get(c.$Colors, bkgroundSecondary);
+    margin-right: 1rem;
+
+    .nav
+    {
+        display: flex;
+        list-style: none;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 11rem .5rem;
+        align-items: center;
+        text-align: center;
+        color: #E9E9E9;
+        font-size: 0.9rem;
+
+        li a
+        {
+            text-decoration: none;
+            color: map-get(c.$Colors, idleState);
+            display: flex;
+
+        }
+
+        li .groupa:hover
+        {
+            color: #E9E9E9;
+            background-color: red;
+        }
+
+        li .groupa
+        {
+            display: flex;
+            flex-direction: column;
+            gap: .60rem;
+            align-items: center;
+            transition: 1s;
+
+
+            p
+            {
+                order: 1;
+                font-size: 12px;
+            }
+        }
+    }
 }
 
 .intro-card
@@ -22,6 +77,7 @@ body
     border-radius: 16px;
     border: #262626 1px solid;
     max-width: 540px;
+    max-height: 250px;
     font-size: .9rem;
     align-content: center;
 
