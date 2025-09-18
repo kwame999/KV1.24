@@ -18,12 +18,13 @@ body
 {
     display: flex;
     background-color: map-get(c.$Colors, bkgroundSecondary);
-    padding: 1.25rem 1.5rem ;
+    padding: 1.25rem 2.4rem ;
     border-radius: 16px;
     border: #262626 1px solid;
-    max-width: 620px;
+    max-width: 540px;
     font-size: .9rem;
     align-content: center;
+
 .card-details
 {
     display: flex;
@@ -32,26 +33,58 @@ body
 
     .profile-pic 
     {
-        width: 20%;
-        border: solid red;
+        width: 15%;
+        border: solid #262626 1px;
         border-radius: 100%;
+    }
+
+    .top-details
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
     .quick-connect
     {
         display: flex;
-        border: solid red;
-      
+        height: 20px;
+        align-items: center;
+        gap: 30px;
+        font-weight: 300;
+
         .status::before
         {
-            content: "s";
+            content: "";
+            width: 8px;
+            height: 8px;
+            background-color: rgb(1, 209, 35);
+            display: inline-block;
+            border-radius: 100%;
+            margin-right: 10px;
+            border: solid .5px rgb(5, 63, 18);
+        }
+        
+        .status
+        {
+            color: map-get(c.$Colors, bodyColor);
         }
 
         button
         {
             border-radius: 100%;
-            max-height: 28px;
-            padding: .4rem;
+            padding: 1rem;
+            border: .2px solid #4b4848;
+            cursor: pointer;
+            background-color: #313131;
+
+            .fa-solid
+            {
+                color: wheat;
+                text-align: center;
+                align-content: center;
+            }
+
         }
     }
 
@@ -60,11 +93,26 @@ body
         display: flex;
         list-style: none;
         margin-top: .75rem;
+        gap: .3rem;
+
+        .fa-brands
+        {
+            color: map-get(c.$Colors, socionsIdle);
+            transition: 1s;
+            cursor: pointer;
+        }
+
+        .fa-brands:hover
+        {
+            color: map-get(c.$Colors, activeState);
+        }
     }
 
     .p-card
     {
-            line-height: 141.8%;
+        line-height: 141.8%;
+        color: map-get(c.$Colors, bodyColor);
+
     }
 
     h1
@@ -75,3 +123,4 @@ body
 
     
 }
+
