@@ -5,7 +5,7 @@
 }
 
 body {
-  background-color: #0E0E0E;
+  background-color: #0A0A0A;
   display: flex;
   color: white;
   font-family: Geist;
@@ -13,80 +13,78 @@ body {
   padding: 3.25rem 1.5rem 0rem 1.5rem;
 }
 
-.nav-group {
+body .nav-group {
   display: flex;
-  border: #262626 1px solid;
+  border: #262626 0.5px solid;
   align-items: center;
   border-radius: 41px;
-  background-color: #191919;
+  background-color: #0F0F0F;
   margin-right: 1rem;
 }
-.nav-group .nav {
+body .nav-group .nav {
   display: flex;
   list-style: none;
   flex-direction: column;
-  gap: 2rem;
-  padding: 11rem 0.5rem;
+  gap: 2.8rem;
+  padding: 11rem 0.7rem;
   align-items: center;
   text-align: center;
   color: #E9E9E9;
   font-size: 0.9rem;
+  text-transform: uppercase;
 }
-.nav-group .nav li a {
+body .nav-group .nav li a {
   text-decoration: none;
   color: #646464;
   display: flex;
 }
-.nav-group .nav li .groupa:hover {
+body .nav-group .nav li .groupa:hover {
   color: #E9E9E9;
   background-color: red;
 }
-.nav-group .nav li .groupa {
+body .nav-group .nav li .groupa {
   display: flex;
   flex-direction: column;
   gap: 0.6rem;
   align-items: center;
   transition: 1s;
 }
-.nav-group .nav li .groupa p {
+body .nav-group .nav li .groupa p {
   order: 1;
-  font-size: 12px;
+  font-size: 0.6rem;
 }
 
-.intro-card {
-  display: flex;
+body .side-panel-1 .intro-card {
   background-color: #191919;
   padding: 1.25rem 2.4rem;
   border-radius: 16px;
   border: #262626 1px solid;
   max-width: 540px;
-  max-height: 250px;
   font-size: 0.9rem;
-  align-content: center;
 }
-.intro-card .card-details {
+body .side-panel-1 .intro-card .card-details {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
 }
-.intro-card .card-details .profile-pic {
+body .side-panel-1 .intro-card .card-details .profile-pic {
   width: 15%;
   border: solid #262626 1px;
   border-radius: 100%;
+  margin-bottom: 0.4rem;
 }
-.intro-card .card-details .top-details {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.intro-card .quick-connect {
+body .side-panel-1 .intro-card .card-details .quick-connect {
   display: flex;
   height: 20px;
   align-items: center;
   gap: 30px;
   font-weight: 300;
 }
-.intro-card .quick-connect .status::before {
+body .side-panel-1 .intro-card .card-details .quick-connect .status {
+  color: #E9E9E9;
+  font-weight: 240;
+}
+body .side-panel-1 .intro-card .card-details .quick-connect .status::before {
   content: "";
   width: 8px;
   height: 8px;
@@ -96,40 +94,114 @@ body {
   margin-right: 10px;
   border: solid 0.5px rgb(5, 63, 18);
 }
-.intro-card .quick-connect .status {
-  color: #E9E9E9;
-}
-.intro-card .quick-connect button {
+body .side-panel-1 .intro-card .card-details .quick-connect button {
   border-radius: 100%;
-  padding: 1rem;
+  padding: 0.8rem;
   border: 0.2px solid #4b4848;
   cursor: pointer;
   background-color: #313131;
+  transition: 0.5s;
 }
-.intro-card .quick-connect button .fa-solid {
+body .side-panel-1 .intro-card .card-details .quick-connect button .fa-solid {
   color: wheat;
   text-align: center;
   align-content: center;
 }
-.intro-card .card-details .socials {
+body .side-panel-1 .intro-card .card-details .quick-connect button:hover {
+  transform: scale(1.1);
+}
+body .side-panel-1 .intro-card .socials {
   display: flex;
   list-style: none;
   margin-top: 0.75rem;
   gap: 0.3rem;
 }
-.intro-card .card-details .socials .fa-brands {
+body .side-panel-1 .intro-card .socials .fa-brands {
   color: #737373;
   transition: 1s;
   cursor: pointer;
+  margin-top: 1rem;
 }
-.intro-card .card-details .socials .fa-brands:hover {
+body .side-panel-1 .intro-card .socials .fa-brands:hover {
   color: #E9E9E9;
 }
-.intro-card .p-card {
+body .side-panel-1 .intro-card .p-card {
   line-height: 141.8%;
   color: #E9E9E9;
 }
-.intro-card h1 {
+body .side-panel-1 .intro-card h1 {
   font-size: 19px;
   letter-spacing: -0.5%;
+  margin-top: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+body .work-history {
+  background-color: #191919;
+  padding: 2.4rem 2.4rem;
+  max-width: 540px;
+  border-radius: 16px;
+  border: #262626 1px solid;
+  margin-top: 2.2rem;
+}
+body .work-history .work-pan .work-his-details {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  font-size: 0.9rem;
+}
+body .work-history .work-pan .work-his-details .head-details {
+  display: flex;
+  align-items: center;
+}
+body .work-history .work-pan .work-his-details .head-details h3 {
+  margin-bottom: 0.3rem;
+}
+body .work-history .work-pan .work-his-details .head-details img {
+  max-width: 15%;
+  border-radius: 16%;
+  margin-right: 1rem;
+}
+body .work-history .work-pan .work-his-details p {
+  letter-spacing: 2%;
+  line-height: 150%;
+}
+body .work-history .work-pan .work-his-details .start-date {
+  color: #9E9E9E;
+  font-size: 0.8rem;
+}
+body .work-history .work-pan .work-his-details .name-date-group {
+  display: flex;
+  align-items: center;
+  margin-top: 1.4rem;
+  justify-content: space-between;
+}
+body .work-history .work-pan .work-his-details .name-date-group .btn {
+  border-radius: 100%;
+  padding: 0.8rem;
+  border: 0.2px solid #4b4848;
+  cursor: pointer;
+  background-color: #313131;
+  transition: 0.7s;
+}
+body .work-history .work-pan .work-his-details .name-date-group .btn .fa-solid {
+  color: rgb(192, 192, 192);
+  text-align: center;
+  align-content: center;
+}
+body .work-history .work-pan .work-his-details .name-date-group .btn:hover {
+  background-color: #444444;
+}
+body .work-history h2 {
+  font-size: 1.2rem;
+  letter-spacing: 2%;
+  margin-bottom: 1rem;
+}
+body .work-history .line-seperate {
+  display: block;
+  background-color: rgba(82, 77, 77, 0.4039215686);
+  width: 100%;
+  height: 0.1px;
+  border-radius: 4%;
+  margin-top: 0.8rem;
 }/*# sourceMappingURL=style.css.map */
